@@ -19,3 +19,5 @@ Route::resource("users", "UserController");
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/questionnaire', )
+//Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout'])
