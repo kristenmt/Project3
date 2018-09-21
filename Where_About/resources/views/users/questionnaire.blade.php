@@ -1,4 +1,4 @@
-@extends('create')
+@extends('layout')
 
 @section('title')
 Take questionnaire
