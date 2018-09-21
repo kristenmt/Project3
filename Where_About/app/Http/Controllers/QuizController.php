@@ -15,3 +15,5 @@ class QuizController extends Controller
         return view('questionnaire');
     }
 }
+
+
