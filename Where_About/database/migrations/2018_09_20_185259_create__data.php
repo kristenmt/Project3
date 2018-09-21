@@ -18,9 +18,9 @@ class CreateData extends Migration
             $table->increments('id');
             $table->string('State');
             $table->string('City');
-            $table->integer('Cost_of_Living');
+            $table->string('Cost_of_Living');
             $table->string('Weather');
-            $table->integer('Region');
+            $table->String('Region');
             $table->string('Property_Value');
             $table->integer('Population');
             $table->string('Employment');
