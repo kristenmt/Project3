@@ -20,7 +20,7 @@ class CreateData extends Migration
             $table->string('City');
             $table->string('Cost_of_Living');
             $table->string('Weather');
-            $table->String('Region');
+            $table->string('Region');
             $table->string('Property_Value');
             $table->integer('Population');
             $table->string('Employment');
