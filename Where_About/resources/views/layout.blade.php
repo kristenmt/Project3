@@ -87,6 +87,7 @@
         @yield('results-title')
         @yield('results')
         @yield('signout')
+        @yield('user-home')
 
         {{-- <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
