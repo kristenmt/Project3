@@ -4,7 +4,7 @@
 Welcome Back!
 @stop
 
-@section('user-home')
+@section('content')
   <h4>Here are your saved cities:</h4>
 
     <hr>
@@ -12,3 +12,7 @@ Welcome Back!
     <a href="https://www.boston.gov/visiting-boston" target="_blank">www.boston.gov/</a>
 
     @stop
+    @section('signout')
+    <hr>
+<a href="/logout"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
+@stop

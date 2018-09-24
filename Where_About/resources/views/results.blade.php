@@ -1,14 +1,11 @@
 @extends('layout')
 
-@section('signout')
-<a href="/logout"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
-@stop
 
-@section('results-title')
+@section('title')
 Results page
 @stop
 
-@section('results')
+@section('content')
   <h4>Here are your results!</h4>
 
     <hr>
@@ -20,3 +17,8 @@ Results page
     <a href="https://www.boston.gov/visiting-boston" target="_blank">www.boston.gov/</a>
 
     @stop
+
+    @section('signout')
+    <hr>
+<a href="/logout"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
+@stop
