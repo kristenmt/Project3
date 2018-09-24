@@ -8,8 +8,6 @@ Take questionnaire
   <h4>Take this fun questionnaire to find out where you should move to next!</h4>
     <hr>
     
-
-
     <div>
       <h3>Population</h3>
       <label>

@@ -1,6 +1,19 @@
 @extends('layout')
 
 @section ('authentication')
+<style>
+    body {
+        /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/diego-jimenez-258120-unsplash.jpg); */
+        /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(../images/diego-jimenez-258120-unsplash.jpg); */
+        /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/diego-jimenez-258120-unsplash.jpg); */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/road1.jpg);
+        /* background-image: url(../images/road1.jpg); */
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        
+    }
+</style>
 <div class="content">
         <div class="title m-b-md">
             Where About

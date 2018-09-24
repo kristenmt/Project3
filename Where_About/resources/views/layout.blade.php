@@ -38,12 +38,6 @@
                 position: relative;
             }
 
-            /* .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            } */
-
             .content {
                 text-align: center;
             }
@@ -71,8 +65,6 @@
 
             .links a:hover{
                 color: #dc7702;
-                /* border-bottom: 2px solid #dc7702; */
-                /* transition: border-bottom 0.2s; */
             }
 
             .m-b-md {
@@ -84,34 +76,7 @@
         @yield('authentication')
         @yield('title')
         @yield('content')
-        @yield('results-title')
-        @yield('results')
         @yield('signout')
-        @yield('user-home')
-
-        {{-- <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif --}}
-
-           
-                {{-- <div class="links"> --}}
-                    {{-- <a href="/users/create">Sign Up</a> --}}
-                    {{-- <a href="#">Sign In</a> --}}
-                    {{-- <a href="https://laravel-news.com">News</a> --}}
-                    {{-- <a href="https://nova.laravel.com">Nova</a> --}}
-                    {{-- <a href="https://forge.laravel.com">Forge</a> --}}
-                    {{-- <a href="https://github.com/laravel/laravel">GitHub</a> --}}
-                {{-- </div> --}}
-            </div>
-        </div>
     </body>
 </html>
 
