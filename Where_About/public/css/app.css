@@ -26,3 +26,45 @@ button:hover{
 .btn-link:hover {
     color: #fda136;
 }
+.content {
+    margin: 50px;
+}
+.welcome {
+    text-align: center;
+    padding-left: 30px;
+}
+nav {
+    padding: 30px;
+}
+nav h3{
+    font-weight: 200;
+}
+.page-intro {
+    text-align: center;
+}
+.main-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -80%);
+    float: left;
+    padding-bottom: 30px;
+}
+#quiz-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -30%);
+    float: left;
+
+}
+.main-content a{
+    color: #fda136;
+}
+.main-content a:hover{
+    text-decoration: none;
+    color: #dc7702;
+}
+label {
+    padding-right: 10px;
+}
