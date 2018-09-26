@@ -14,19 +14,19 @@ class CreateData extends Migration
     public function up()
     {
         //
-        Schema::create('data', function (Blueprint $table) {
+        Schema::create('quizzes', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('State');
-            $table->string('City');
-            $table->string('Cost_of_Living');
-            $table->string('Weather');
-            $table->string('Region');
-            $table->string('Property_Value');
-            $table->integer('Population');
-            $table->string('Employment');
-            $table->string('Avg_Rent');
-            $table->string('Geography');
-            $table->string('Median_Income');
+            $table->VARCHAR('State');
+            $table->VARCHAR('City');
+            $table->VARCHAR('Cost_of_Living');
+            $table->VARCHAR('Weather');
+            $table->VARCHAR('Region');
+            $table->VARCHAR('Property_Value');
+            $table->integer('population');
+            $table->VARCHAR('Employment');
+            $table->VARCHAR('Avg_Rent');
+            $table->VARCHAR('Geography');
+            $table->VARCHAR('Median_Income');
         });
     }
 

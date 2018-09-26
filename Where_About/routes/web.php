@@ -15,10 +15,11 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/questionnaire', 'QuizController@quiz');
+Route::get('/questionnaire', 'QuizController@show');
 Route::get('/results', 'ResultsController@results');
 Route::get('/userhome', 'UserhomeController@user');
 Auth::routes();
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+Route::resource('Quiz', 'QuizController');
 //Route::get('/home', 'HomeController@index')->name('home');
 

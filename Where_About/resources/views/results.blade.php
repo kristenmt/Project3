@@ -15,33 +15,34 @@
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
-
-
 @extends('layout')
 
+
 @section('title')
-<nav>
-<h3>Where To</h3>
-</nav>
+Results page
 @stop
 
 @section('content')
- 
-  <div class="page-intro">
-      <h4>Here are your results!</h4>
-    </div> 
-    <hr>
-    <div class="main-content">
-    <h2>New York, NY</h2>
-    <a href="https://www.nycgo.com/" target="_blank">www.nycgo.com</a>
-
-    <h2>Boston, MA</h2>
-    <a href="https://www.boston.gov/visiting-boston" target="_blank">www.boston.gov/</a>
-    
-    @stop
+    <h1>Here are your results!</h1>
+        @if(count($results) > 1)
+            @foreach($results as $key => $value)
+                <div class="card">
+                    <div class="card-header">
+                        Location {{$key}}
+                    </div>
+                    <p>{{$value->City}}</p>
+                    <p>{{$value->State}}</p>
+                    <p>{{$value->Avg_Rent}}</p>  
+                    <p>{{$value->Property_Value}}</p>
+                    <p>{{$value->Cost_of_Living}}</p>
+                </div>
+            @endforeach
+        @else
+            <p> No Post Found</p>
+        @endif
+  @endsection
 
     @section('signout')
-    <hr>
+    
 <a href="/logout"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
-</div>
 @stop
