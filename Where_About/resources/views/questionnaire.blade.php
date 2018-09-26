@@ -15,110 +15,62 @@
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
-
-
 @extends('layout')
 
 @section('title')
-<nav>
-<h3>Where To</h3>
-</nav>
+Take questionnaire
 @stop
 
 @section('content')
-<div class="page-intro">
   <h4>Take this fun questionnaire to find out where you should move to next!</h4>
-</div>  
-  <hr>
-    
-  <div class="main-content" id="quiz-content">
-    <div>
-      <h3>Population</h3>
-      <label>
-        <input type="checkbox" class="radio" value="L" name="fooby[1][]" />High</label>
-      <label>
-        <input type="checkbox" class="radio" value="M" name="fooby[1][]" />Medium High</label>
-      <label>
-        <input type="checkbox" class="radio" value="S" name="fooby[1][]" />Low</label>
-      <label>
-        <input type="checkbox" class="radio" value="XS" name="fooby[1][]" />Rural</label>
-    </div>
-    <div>
-      <h3>Cost of Living</h3>
-      <label>
-        <input type="checkbox" class="radio" value="High" name="fooby[2][]" />$$$$</label>
-      <label>
-        <input type="checkbox" class="radio" value="Medium High" name="fooby[2][]" />$$$</label>
-      <label>
-        <input type="checkbox" class="radio" value="Medium" name="fooby[2][]" />$$</label>
-      <label>
-        <input type="checkbox" class="radio" value="Low" name="fooby[2][]" />$</label>
-    </div>
-    <div>
-      <h3>Property Value</h3>
-      <label>
-        <input type="checkbox" class="radio" value="XL" name="fooby[3][]" />$$$$</label>
-      <label>
-        <input type="checkbox" class="radio" value="L" name="fooby[3][]" />$$$</label>
-      <label>
-        <input type="checkbox" class="radio" value="M" name="fooby[3][]" />$$</label>
-      <label>
-        <input type="checkbox" class="radio" value="S" name="fooby[3][]" />$</label>
-    </div>
-    <div>
-    <h3>Employment</h3>
-      <label>
-        <input type="checkbox" class="radio" value="L" name="fooby[4][]" />High</label>
-      <label>
-        <input type="checkbox" class="radio" value="M" name="fooby[4][]" />Medium</label>
-      <label>
-        <input type="checkbox" class="radio" value="H" name="fooby[4][]" />Low</label>
-      
-    </div>
-    <div>
-      <h3>Weather</h3>
-      <label>
-        <input type="checkbox" class="radio" value="H&H" name="fooby[5][]" />Hot & Humid</label>
-      <label>
-        <input type="checkbox" class="radio" value="Snow" name="fooby[5][]" />Snow</label>
-      <label>
-        <input type="checkbox" class="radio" value="H&D" name="fooby[5][]" />Hot & Dry</label>
+    <hr>
+      <div class="container">
+      <form action="/questionnaire" method="GET" > 
+        {{csrf_field()}}
+       
+      <div class="form-group row">
+        <h3>Cost of Living</h3>
+        <br>
         <label>
-        <input type="checkbox" class="radio" value="All 4 Seasons" name="fooby[5][]" />4 Seasons</label>
-    </div> 
-    <div>
-      <h3>Region</h3>
-      <label>
-        <input type="checkbox" class="radio" value="NE" name="fooby[6][]" />North East</label>
-      <label>
-        <input type="checkbox" class="radio" value="MW" name="fooby[6][]" />Mid-West</label>
-      <label>
-        <input type="checkbox" class="radio" value="S" name="fooby[6][]" />South</label>
-      <label>
-        <input type="checkbox" class="radio" value="NW" name="fooby[6][]" />North West</label>
-      <label>
-        <input type="checkbox" class="radio" value="W" name="fooby[6][]" />West</label>
-      <label>
-         <input type="checkbox" class="radio" value="OU" name="fooby[6][]" />Outside the States</label>      
-    </div>
-    <div>
-      <h3>Terrain</h3>
-      <label>
-        <input type="checkbox" class="radio" value="Beach" name="fooby[7][]" />Beach</label>
-      <label>
-        <input type="checkbox" class="radio" value="Desert" name="fooby[7][]" />Desert</label>
-      <label>
-        <input type="checkbox" class="radio" value="Flat Land" name="fooby[7][]" />Flat Land</label>
-      <label>
-        <input type="checkbox" class="radio" value="Lake" name="fooby[7][]" />Lake</label>
-      <label>
-        <input type="checkbox" class="radio" value="Beach & Mnt" name="fooby[7][]" />Beach & Mountains</label>
-      <label>
-         <input type="checkbox" class="radio" value="Mountains" name="fooby[7][]" />Mountains</label>
-      <label>
-        <input type="checkbox" class="radio" value="River" name="fooby[7][]" />River</label>      
-    </div> 
-  
+          <input type="checkbox" class="radio" value="H" name="fooby_2" />High</label>
+        <label>
+          <input type="checkbox" class="radio" value="M" name="fooby_2" />Medium</label>
+        <label>
+          <input type="checkbox" class="radio" value="L" name="fooby_2" />Low</label>
+      </div>
+      <div class="form-group row">
+        <h3>Region</h3>
+        <br>
+        <label>
+          <input type="checkbox" class="radio" value="NE" name="fooby_6" />NE</label>
+        <label>
+          <input type="checkbox" class="radio" value="MW" name="fooby_6" />MW</label>
+        <label>
+          <input type="checkbox" class="radio" value="S" name="fooby_6" />S</label>
+        <label>
+          <input type="checkbox" class="radio" value="NW" name="fooby_6" />NW</label>
+        <label>
+          <input type="checkbox" class="radio" value="W" name="fooby_6" />W</label>
+        <label>
+          <input type="checkbox" class="radio" value="OU" name="fooby_6" />OU</label>      
+      </div>
+      <div class="form-group row">
+        <h3>Terrain</h3>
+        <br>
+        <label>
+          <input type="checkbox" class="radio" value="Beach" name="fooby_7" />Beach</label>
+        <label>
+          <input type="checkbox" class="radio" value="Desert" name="fooby_7" />Desert</label>
+        <label>
+          <input type="checkbox" class="radio" value="Flat Land" name="fooby_7" />Flat Land</label>
+        <label>
+          <input type="checkbox" class="radio" value="Mountains" name="fooby_7" />Mountains</label>
+      </div> 
+        <button type="submit" class="btn btn-primary">Submit</button>   
+      </form>   
+    </div>  
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>$("input:checkbox").on('click', function() {
       // in the handler, 'this' refers to the box clicked on
@@ -135,11 +87,7 @@
         $box.prop("checked", false);
       }
     });</script>
-    @section('signout')
-    <a href="/results"><button class="btn">Submit</button>
-      
-    </div>
-      @stop
-   
+    
     
     @stop
+
