@@ -38,11 +38,11 @@
                         Location {{$key + 1}}
                     </div>
                     <p>{{$value->City}}</p>
-                    <p>{{$value->State}}</p>
-                    <p>{{$value->Avg_Rent}} is the average rent.</p>  
-                    <p>{{$value->Property_Value}} is the property value (s=low, m=medium, h=high)</p>
-                    <p>{{$value->Cost_of_Living}} is the cost of living (h=high, m=medium, l=low)</p>
-                    <p>Typical weather is {{$value->Weather}}</p>
+
+                    <p>{{$value->State}}</p> 
+                    <p>Average Rent ${{$value->Avg_Rent}}</p>
+                    <p>Median Income ${{$value->Median_Income}}</p>
+
                 </div>
 </div>
             @endforeach
