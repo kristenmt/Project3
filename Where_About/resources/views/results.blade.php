@@ -17,25 +17,34 @@
 
 @extends('layout')
 
-
 @section('title')
-Results page
+
+<nav>
+        <h3>
+            Where To
+        </h3>
+      </nav>
 @stop
 
 @section('content')
+<div class="page-intro" id="results-intro">
     <h1>Here are your results!</h1>
+</div>
+<div class="results-content">
         @if(count($results) > 1)
             @foreach($results as $key => $value)
                 <div class="card">
                     <div class="card-header">
-                        Location {{$key}}
+                        Location {{$key + 1}}
                     </div>
                     <p>{{$value->City}}</p>
                     <p>{{$value->State}}</p>
-                    <p>{{$value->Avg_Rent}}</p>  
-                    <p>{{$value->Property_Value}}</p>
-                    <p>{{$value->Cost_of_Living}}</p>
+                    <p>{{$value->Avg_Rent}} is the average rent.</p>  
+                    <p>{{$value->Property_Value}} is the property value (s=low, m=medium, h=high)</p>
+                    <p>{{$value->Cost_of_Living}} is the cost of living (h=high, m=medium, l=low)</p>
+                    <p>Typical weather is {{$value->Weather}}</p>
                 </div>
+</div>
             @endforeach
         @else
             <p> No Post Found</p>

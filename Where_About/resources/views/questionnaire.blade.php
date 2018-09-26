@@ -18,13 +18,19 @@
 @extends('layout')
 
 @section('title')
-Take questionnaire
+<nav>
+  <h3>
+    Where To
+  </h3>
+</nav>
 @stop
 
 @section('content')
-  <h4>Take this fun questionnaire to find out where you should move to next!</h4>
-    <hr>
-      <div class="container">
+<div class="page-intro">
+  <h4>Take this short questionnaire to find out where you should move to next!</h4>
+</div> 
+  <hr>
+      <div class="main-content" id="quiz-content">
       <form action="/questionnaire" method="GET" > 
         {{csrf_field()}}
        
@@ -32,41 +38,41 @@ Take questionnaire
         <h3>Cost of Living</h3>
         <br>
         <label>
-          <input type="checkbox" class="radio" value="H" name="fooby_2" />High</label>
+          <input type="checkbox" class="radio" value="H" name="fooby_2" /> &nbsp;High</label>
         <label>
-          <input type="checkbox" class="radio" value="M" name="fooby_2" />Medium</label>
+          <input type="checkbox" class="radio" value="M" name="fooby_2" />  &nbsp;Medium</label>
         <label>
-          <input type="checkbox" class="radio" value="L" name="fooby_2" />Low</label>
+          <input type="checkbox" class="radio" value="L" name="fooby_2" />  &nbsp;Low</label>
       </div>
       <div class="form-group row">
         <h3>Region</h3>
         <br>
         <label>
-          <input type="checkbox" class="radio" value="NE" name="fooby_6" />NE</label>
+          <input type="checkbox" class="radio" value="NE" name="fooby_6" />  &nbsp;NE</label>
         <label>
-          <input type="checkbox" class="radio" value="MW" name="fooby_6" />MW</label>
+          <input type="checkbox" class="radio" value="MW" name="fooby_6" />  &nbsp;MW</label>
         <label>
-          <input type="checkbox" class="radio" value="S" name="fooby_6" />S</label>
+          <input type="checkbox" class="radio" value="S" name="fooby_6" />  &nbsp;S</label>
         <label>
-          <input type="checkbox" class="radio" value="NW" name="fooby_6" />NW</label>
+          <input type="checkbox" class="radio" value="NW" name="fooby_6" />  &nbsp;NW</label>
         <label>
-          <input type="checkbox" class="radio" value="W" name="fooby_6" />W</label>
+          <input type="checkbox" class="radio" value="W" name="fooby_6" />  &nbsp;W</label>
         <label>
-          <input type="checkbox" class="radio" value="OU" name="fooby_6" />OU</label>      
+          <input type="checkbox" class="radio" value="OU" name="fooby_6" />  &nbsp;Outside Continental US</label>      
       </div>
       <div class="form-group row">
         <h3>Terrain</h3>
         <br>
         <label>
-          <input type="checkbox" class="radio" value="Beach" name="fooby_7" />Beach</label>
+          <input type="checkbox" class="radio" value="Beach" name="fooby_7" />  &nbsp;Beach</label>
         <label>
-          <input type="checkbox" class="radio" value="Desert" name="fooby_7" />Desert</label>
+          <input type="checkbox" class="radio" value="Desert" name="fooby_7" />  &nbsp;Desert</label>
         <label>
-          <input type="checkbox" class="radio" value="Flat Land" name="fooby_7" />Flat Land</label>
+          <input type="checkbox" class="radio" value="Flat Land" name="fooby_7" />  &nbsp;Flat Land</label>
         <label>
-          <input type="checkbox" class="radio" value="Mountains" name="fooby_7" />Mountains</label>
+          <input type="checkbox" class="radio" value="Mountains" name="fooby_7" />  &nbsp;Mountains</label>
       </div> 
-        <button type="submit" class="btn btn-primary">Submit</button>   
+        <button type="submit" class="btn">Submit</button>   
       </form>   
     </div>  
 
