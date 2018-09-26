@@ -31,10 +31,9 @@ Results page
                         Location {{$key}}
                     </div>
                     <p>{{$value->City}}</p>
-                    <p>{{$value->State}}</p>
-                    <p>{{$value->Avg_Rent}}</p>  
-                    <p>{{$value->Property_Value}}</p>
-                    <p>{{$value->Cost_of_Living}}</p>
+                    <p>{{$value->State}}</p> 
+                    <p>Average Rent ${{$value->Avg_Rent}}</p>
+                    <p>Median Income ${{$value->Median_Income}}</p>
                 </div>
             @endforeach
         @else

@@ -22,7 +22,7 @@ class CreateData extends Migration
             $table->VARCHAR('Weather');
             $table->VARCHAR('Region');
             $table->VARCHAR('Property_Value');
-            $table->integer('population');
+            $table->VARCHAR('population');
             $table->VARCHAR('Employment');
             $table->VARCHAR('Avg_Rent');
             $table->VARCHAR('Geography');

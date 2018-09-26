@@ -27,7 +27,16 @@ Take questionnaire
       <div class="container">
       <form action="/questionnaire" method="GET" > 
         {{csrf_field()}}
-       
+        {{-- <div class="form-group row">
+          <h3>population</h3>
+          <br>
+          <label>
+            <input type="checkbox" class="radio" value="L" name="fooby_1" />Large</label>
+          <label>
+            <input type="checkbox" class="radio" value="M" name="fooby_1" />Medium</label>
+          <label>
+            <input type="checkbox" class="radio" value="S" name="fooby_1" />Small</label>
+        </div> --}}
       <div class="form-group row">
         <h3>Cost of Living</h3>
         <br>
@@ -37,6 +46,16 @@ Take questionnaire
           <input type="checkbox" class="radio" value="M" name="fooby_2" />Medium</label>
         <label>
           <input type="checkbox" class="radio" value="L" name="fooby_2" />Low</label>
+      </div>
+      <div class="form-group row">
+        <h3>Weather</h3>
+        <br>
+        <label>
+          <input type="checkbox" class="radio" value="Hot" name="fooby_3" />Hot</label>
+        <label>
+          <input type="checkbox" class="radio" value="Snow" name="fooby_3" />Snow</label>
+        <label>
+          <input type="checkbox" class="radio" value="All 4 Seasons" name="fooby_3" />All 4 Seasons</label>
       </div>
       <div class="form-group row">
         <h3>Region</h3>
@@ -62,7 +81,7 @@ Take questionnaire
         <label>
           <input type="checkbox" class="radio" value="Desert" name="fooby_7" />Desert</label>
         <label>
-          <input type="checkbox" class="radio" value="Flat Land" name="fooby_7" />Flat Land</label>
+          <input type="checkbox" class="radio" value="Flat Lands" name="fooby_7" />Flat Land</label>
         <label>
           <input type="checkbox" class="radio" value="Mountains" name="fooby_7" />Mountains</label>
       </div> 
