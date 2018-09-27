@@ -13,6 +13,9 @@
 
 <!-- Styles -->
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+{{-- Animation cdn --}}
+
+
 </head>
 
 @extends('layout')
@@ -28,20 +31,20 @@
 
 @section('content')
 <div class="page-intro" id="results-intro">
-    <h1>Here are your results!</h1>
+    <h1 id="name">Here are your results!</h1>
 </div>
-<div class="results-content">
+<div id="resultsCard" class="results-content">
         @if(count($results) > 1)
             @foreach($results as $key => $value)
                 <div class="card">
                     <div class="card-header">
                         Location {{$key + 1}}
                     </div>
-                    <p>{{$value->City}}</p>
+                    <p class="nv">{{$value->City}}</p>
 
-                    <p>{{$value->State}}</p> 
-                    <p>Average Rent ${{$value->Avg_Rent}}</p>
-                    <p>Median Income ${{$value->Median_Income}}</p>
+                    <p class="nv">{{$value->State}}</p> 
+                    <p class="nv"> Average Rent ${{$value->Avg_Rent}}</p>
+                    <p class="nv">Median Income ${{$value->Median_Income}}</p>
 
                 </div>
 </div>
@@ -55,3 +58,5 @@
     
 <a href="/logout"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
 @stop
+
+
