@@ -14,24 +14,19 @@
 <!-- Styles -->
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
+<style>
+.card-header {
+    background-color: #fff;
+}
+</style>
 
 @extends('layout')
-
 @section('title')
-
 <nav>
-        <h3>
-            Where To
-        </h3>
-         <a class="btn btn-link" id="logout" href="/logout">
-            Logout
-            </a>
-      </nav>
-      
-    
-
+        <h3>Where To</h3>
+        <a class="btn btn-link" id="logout" href="/logout">Logout</a>
+</nav>
 @stop
-
 @section('content')
 <div class="page-intro" id="results-intro">
     <h1>Here are your results!</h1>
@@ -44,22 +39,13 @@
                         Location {{$key + 1}}
                     </div>
                     <p>{{$value->City}}</p>
-
                     <p>{{$value->State}}</p> 
                     <p>Average Rent ${{$value->Avg_Rent}}</p>
                     <p>Median Income ${{$value->Median_Income}}</p>
-
                 </div>
 </div>
             @endforeach
         @else
             <p> No Post Found</p>
         @endif
-        {{-- <a href="/logout"><i class="fa fa-sign-out fa-fw"></i>Logout</a> --}}
   @endsection
-
-    {{-- @section('signout')
-    
-<a href="/logout"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
-@endsection --}}
-{{-- @stop --}}
