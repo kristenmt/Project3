@@ -47,9 +47,6 @@
                     <p class="nv">{{$value->State}}</p> 
                     <p class="nv"> Average Rent ${{$value->Avg_Rent}}</p>
                     <p class="nv">Median Income ${{$value->Median_Income}}</p>
-
-
-
                 </div>
 </div>
             @endforeach
@@ -58,4 +55,3 @@
         @endif
 
   @endsection
-
