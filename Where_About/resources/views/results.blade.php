@@ -41,34 +41,17 @@
                     <div class="card-header">
                         Location {{$key + 1}}
                     </div>
-<<<<<<< HEAD
+
                     <p class="nv">{{$value->City}}</p>
 
                     <p class="nv">{{$value->State}}</p> 
                     <p class="nv"> Average Rent ${{$value->Avg_Rent}}</p>
                     <p class="nv">Median Income ${{$value->Median_Income}}</p>
-
-=======
-                    <p>{{$value->City}}</p>
-                    <p>{{$value->State}}</p> 
-                    <p>Average Rent ${{$value->Avg_Rent}}</p>
-                    <p>Median Income ${{$value->Median_Income}}</p>
->>>>>>> b496af902f8fc86ca78e85993a89ab7e1bcb6cbb
                 </div>
 </div>
             @endforeach
         @else
             <p> No Post Found</p>
         @endif
-<<<<<<< HEAD
-        {{-- <a href="/logout"><i class="fa fa-sign-out fa-fw"></i>Logout</a> --}}
-  @endsection
 
-    {{-- @section('signout')
-    
-<a href="/logout"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
-@endsection --}}
-{{-- @stop --}}
-=======
   @endsection
->>>>>>> b496af902f8fc86ca78e85993a89ab7e1bcb6cbb
