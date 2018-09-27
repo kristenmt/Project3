@@ -32,8 +32,8 @@ Results page
                     </div>
                     <p>{{$value->City}}</p>
                     <p>{{$value->State}}</p> 
-                    <p>Average Rent ${{$value->Avg_Rent}}</p>
-                    <p>Median Income ${{$value->Median_Income}}</p>
+                    <p>Average Rent: ${{$value->Avg_Rent}}</p>
+                    <p>Median Income: ${{$value->Median_Income}}</p>
                 </div>
             @endforeach
         @else
