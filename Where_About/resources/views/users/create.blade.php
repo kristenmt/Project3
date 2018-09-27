@@ -28,10 +28,7 @@ Create a User
              placeholder="Password" 
              required>
     </fieldset>
-
     <button class="btn btn-primary">Submit</button>
-
     {{ csrf_field() }}
   </form>
-
 @stop

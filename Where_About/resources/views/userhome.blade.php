@@ -16,10 +16,10 @@
 </head>
 
 @extends('layout')
-
 @section('title')
 <nav>
-<h3>Where To</h3>
+    <h3>Where To</h3>
+     <a class="btn btn-link" id="logout" href="/logout">Logout</a>
 </nav>
 @stop
 
@@ -34,7 +34,6 @@
     <div class="main-content">
     <h2>Boston, MA</h2>
     <a href="https://www.boston.gov/visiting-boston" target="_blank">www.boston.gov/</a>
-
     @stop
     @section('signout')
     <hr>
