@@ -14,7 +14,14 @@
 <!-- Styles -->
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-
+<style>
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/road3.jpg);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+</style>
 @extends('layout')
 
 @section('title')
@@ -27,7 +34,7 @@
 
 @section('content')
 <div class="page-intro">
-  <h4>Take this short questionnaire to find out where you should move to next!</h4>
+  <h4>Take this short quiz to find out where you should move to next!</h4>
 </div> 
   <hr>
       <div class="main-content" id="quiz-content">
