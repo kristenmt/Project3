@@ -17,24 +17,19 @@
 
 
 </head>
+<style>
+.card-header {
+    background-color: #fff;
+}
+</style>
 
 @extends('layout')
-
 @section('title')
-
 <nav>
-        <h3>
-            Where To
-        </h3>
-         <a class="btn btn-link" id="logout" href="/logout">
-            Logout
-            </a>
-      </nav>
-      
-    
-
+        <h3>Where To</h3>
+        <a class="btn btn-link" id="logout" href="/logout">Logout</a>
+</nav>
 @stop
-
 @section('content')
 <div class="page-intro" id="results-intro">
     <h1 id="name">Here are your results!</h1>
@@ -46,18 +41,26 @@
                     <div class="card-header">
                         Location {{$key + 1}}
                     </div>
+<<<<<<< HEAD
                     <p class="nv">{{$value->City}}</p>
 
                     <p class="nv">{{$value->State}}</p> 
                     <p class="nv"> Average Rent ${{$value->Avg_Rent}}</p>
                     <p class="nv">Median Income ${{$value->Median_Income}}</p>
 
+=======
+                    <p>{{$value->City}}</p>
+                    <p>{{$value->State}}</p> 
+                    <p>Average Rent ${{$value->Avg_Rent}}</p>
+                    <p>Median Income ${{$value->Median_Income}}</p>
+>>>>>>> b496af902f8fc86ca78e85993a89ab7e1bcb6cbb
                 </div>
 </div>
             @endforeach
         @else
             <p> No Post Found</p>
         @endif
+<<<<<<< HEAD
         {{-- <a href="/logout"><i class="fa fa-sign-out fa-fw"></i>Logout</a> --}}
   @endsection
 
@@ -66,3 +69,6 @@
 <a href="/logout"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
 @endsection --}}
 {{-- @stop --}}
+=======
+  @endsection
+>>>>>>> b496af902f8fc86ca78e85993a89ab7e1bcb6cbb
