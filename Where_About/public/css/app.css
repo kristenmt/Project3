@@ -16,6 +16,7 @@ button {
 button:hover{
     background-color: #dc7702;;
 }
+
 .card-header {
     background-color: #fda136;
     color: #4f5050;
@@ -74,16 +75,26 @@ nav h3{
 #results-intro{
     padding-bottom: 40px;
 }
+
 .card{
+    width: 55%;
+    left:50%;
+    transform: translate(-50%, -10%);
+    float: left;
+}
+/* .card:first-child{
     width: 60%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -10%);
     float: left;
-}
+} */
 .card p {
     padding-left: 15px;
+}
+.card-header {
+    background-color: #fff;
 }
 .form-group h3 {
     padding-right: 20px;

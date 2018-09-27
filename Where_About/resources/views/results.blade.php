@@ -17,24 +17,19 @@
 
 
 </head>
+<style>
+.card-header {
+    background-color: #fff;
+}
+</style>
 
 @extends('layout')
-
 @section('title')
-
 <nav>
-        <h3>
-            Where To
-        </h3>
-         <a class="btn btn-link" id="logout" href="/logout">
-            Logout
-            </a>
-      </nav>
-      
-    
-
+        <h3>Where To</h3>
+        <a class="btn btn-link" id="logout" href="/logout">Logout</a>
+</nav>
 @stop
-
 @section('content')
 <div class="page-intro" id="results-intro">
     <h1 id="name">Here are your results!</h1>
@@ -46,11 +41,14 @@
                     <div class="card-header">
                         Location {{$key + 1}}
                     </div>
+
                     <p class="nv">{{$value->City}}</p>
 
                     <p class="nv">{{$value->State}}</p> 
                     <p class="nv"> Average Rent ${{$value->Avg_Rent}}</p>
                     <p class="nv">Median Income ${{$value->Median_Income}}</p>
+
+
 
                 </div>
 </div>
@@ -58,11 +56,6 @@
         @else
             <p> No Post Found</p>
         @endif
-        {{-- <a href="/logout"><i class="fa fa-sign-out fa-fw"></i>Logout</a> --}}
+
   @endsection
 
-    {{-- @section('signout')
-    
-<a href="/logout"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
-@endsection --}}
-{{-- @stop --}}

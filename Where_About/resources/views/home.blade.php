@@ -8,13 +8,22 @@
         width: 100vw;
         height: 100vh;
     }
+    .title h1 {
+        font-weight: 100;
+        font-size:100px;
+    }
+    .intro h5 {
+        font-weight: 100;
+        font-size: 25px;
+        padding-top: 10px;
+    }
 </style>
 <div class="content">
-        <div class="title m-b-md">
-            Where About
+        <div class="title">
+            <h1>Where To</h1>
         </div>
         <div class="intro">
-            Find out where you should relocate to.
+            <h5>Find out where you should relocate to.</h5>
         </div>
         @if (Route::has('login'))
         <div class="links">
