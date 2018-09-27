@@ -39,6 +39,12 @@ nav {
 nav h3{
     font-weight: 200;
 }
+#logout{
+    padding-left: 1000px;
+    margin-top: -80px;
+    color: #fda136;
+
+}
 .page-intro {
     text-align: center;
 }
@@ -54,7 +60,7 @@ nav h3{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     float: left;
 
 }

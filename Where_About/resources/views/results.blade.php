@@ -23,7 +23,13 @@
         <h3>
             Where To
         </h3>
+         <a class="btn btn-link" id="logout" href="/logout">
+            Logout
+            </a>
       </nav>
+      
+    
+
 @stop
 
 @section('content')
@@ -49,9 +55,11 @@
         @else
             <p> No Post Found</p>
         @endif
+        {{-- <a href="/logout"><i class="fa fa-sign-out fa-fw"></i>Logout</a> --}}
   @endsection
 
-    @section('signout')
+    {{-- @section('signout')
     
 <a href="/logout"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
-@stop
+@endsection --}}
+{{-- @stop --}}
