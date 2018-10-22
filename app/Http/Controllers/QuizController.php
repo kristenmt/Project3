@@ -85,6 +85,7 @@ class QuizController extends Controller
             $answer5 = $request->fooby_5;
             $answer6 = $request->fooby_6;
             $answer7 = $request->fooby_7;
+
         
              
            
@@ -99,10 +100,11 @@ class QuizController extends Controller
             //     ])->get();
             // var_dump([$answer1,$answer2,$answer3,$answer6,$answer7]);
             //  $results = $choices->where([['population', $answer1]])->get();
-                $results = $choices->where([['Cost_of_Living', $answer2]])->get();
-                 $results = $choices->where([['Weather', $answer3]])->get();
-                $results = $choices->where([['Region', $answer6]])->get();
-                $results = $choices->where([['Geography', $answer7]])->get();
+                $results = $choices->where([['Cost_of_Living', $answer2]])
+                    ->where([['Weather', $answer3]])
+                    ->where([['Region', $answer6]])
+                    ->where([['Geography', $answer7]])
+                    ->get();
                
             // var_dump($results);
             //render the view template with the data
