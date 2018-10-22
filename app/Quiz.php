@@ -6,8 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Quiz extends Model
 {
-
-    
         protected $fillable = [
             'Population',
             'Cost_of_Living',
@@ -21,5 +19,4 @@ class Quiz extends Model
             'City',
             'State'
             ];
-    
 }

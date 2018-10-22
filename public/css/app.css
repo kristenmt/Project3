@@ -44,7 +44,6 @@ nav h3{
     padding-left: 1000px;
     margin-top: -80px;
     color: #fda136;
-
 }
 .page-intro {
     text-align: center;
@@ -63,7 +62,6 @@ nav h3{
     left: 50%;
     transform: translate(-50%, -40%);
     float: left;
-
 }
 .main-content a{
     color: #fda136;
@@ -75,7 +73,6 @@ nav h3{
 #results-intro{
     padding-bottom: 40px;
 }
-
 .card{
     width: 55%;
     left:50%;

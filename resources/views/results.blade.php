@@ -35,7 +35,7 @@
     <h1 id="name">Here are your results!</h1>
 </div>
 <div id="resultsCard" class="results-content">
-        @if(count($results) > 1)
+        @if(count($results) > 0)
             @foreach($results as $key => $value)
                 <div class="card">
                     <div class="card-header">
