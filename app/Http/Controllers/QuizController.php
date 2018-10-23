@@ -100,7 +100,9 @@ class QuizController extends Controller
             //     ])->get();
             // var_dump([$answer1,$answer2,$answer3,$answer6,$answer7]);
             //  $results = $choices->where([['population', $answer1]])->get();
-                $results = $choices->where([['Cost_of_Living', $answer2]])
+                $results = $choices
+                    // ->where([['Cost_of_Living', $answer2]])
+                    ->where([['Population', $answer1]])
                     ->where([['Weather', $answer3]])
                     ->where([['Region', $answer6]])
                     ->where([['Geography', $answer7]])

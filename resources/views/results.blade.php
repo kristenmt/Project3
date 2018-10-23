@@ -42,11 +42,10 @@
                         Location {{$key + 1}}
                     </div>
 
-                    <p class="nv">{{$value->City}}</p>
-
-                    <p class="nv">{{$value->State}}</p> 
-                    <p class="nv"> Average Rent ${{$value->Avg_Rent}}</p>
-                    <p class="nv">Median Income ${{$value->Median_Income}}</p>
+                    <p class="nv">{{$value->City}}, {{$value->State}}</p> 
+                    <p class="nv">Average Rent: ${{$value->Avg_Rent}}</p>
+                    <p class="nv">Median Income: ${{$value->Median_Income}}</p>
+                    <p class="nv">Population: {{$value->Population}}</p>
                 </div>
 </div>
             @endforeach
