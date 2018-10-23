@@ -37,7 +37,7 @@
       <div class="main-content" id="quiz-content">
       <form action="/questionnaire" method="GET" > 
         {{csrf_field()}}
-      <div class="form-group row">
+      {{-- <div class="form-group row">
         <h3>Cost of Living</h3>
         <br>
         <label>
@@ -46,6 +46,16 @@
           <input type="checkbox" class="radio" value="M" name="fooby_2" />  &nbsp;Medium</label>
         <label>
           <input type="checkbox" class="radio" value="L" name="fooby_2" />  &nbsp;Low</label>
+      </div> --}}
+      <div class="form-group row">
+        <h3>Population</h3>
+        <br>
+        <label>
+          <input type="checkbox" class="radio" value="L" name="fooby_1" /> &nbsp;Large</label>
+        <label>
+          <input type="checkbox" class="radio" value="M" name="fooby_1" />  &nbsp;Medium</label>
+        <label>
+          <input type="checkbox" class="radio" value="S" name="fooby_1" />  &nbsp;Small</label>
       </div>
       <div class="form-group row">
         <h3>Weather</h3>
