@@ -35,18 +35,17 @@
     <h1 id="name">Here are your results!</h1>
 </div>
 <div id="resultsCard" class="results-content">
-        @if(count($results) > 1)
+        @if(count($results) > 0)
             @foreach($results as $key => $value)
                 <div class="card">
                     <div class="card-header">
                         Location {{$key + 1}}
                     </div>
 
-                    <p class="nv">{{$value->City}}</p>
-
-                    <p class="nv">{{$value->State}}</p> 
-                    <p class="nv"> Average Rent ${{$value->Avg_Rent}}</p>
-                    <p class="nv">Median Income ${{$value->Median_Income}}</p>
+                    <p class="nv">{{$value->City}}, {{$value->State}}</p> 
+                    <p class="nv">Average Rent: ${{$value->Avg_Rent}}</p>
+                    <p class="nv">Median Income: ${{$value->Median_Income}}</p>
+                    <p class="nv">Population: {{$value->Population}}</p>
                 </div>
 </div>
             @endforeach

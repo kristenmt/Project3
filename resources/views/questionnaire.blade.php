@@ -37,7 +37,7 @@
       <div class="main-content" id="quiz-content">
       <form action="/questionnaire" method="GET" > 
         {{csrf_field()}}
-      <div class="form-group row">
+      {{-- <div class="form-group row">
         <h3>Cost of Living</h3>
         <br>
         <label>
@@ -46,6 +46,16 @@
           <input type="checkbox" class="radio" value="M" name="fooby_2" />  &nbsp;Medium</label>
         <label>
           <input type="checkbox" class="radio" value="L" name="fooby_2" />  &nbsp;Low</label>
+      </div> --}}
+      <div class="form-group row">
+        <h3>Population</h3>
+        <br>
+        <label>
+          <input type="checkbox" class="radio" value="L" name="fooby_1" /> &nbsp;Large</label>
+        <label>
+          <input type="checkbox" class="radio" value="M" name="fooby_1" />  &nbsp;Medium</label>
+        <label>
+          <input type="checkbox" class="radio" value="S" name="fooby_1" />  &nbsp;Small</label>
       </div>
       <div class="form-group row">
         <h3>Weather</h3>
@@ -91,13 +101,16 @@
       </form>   
     </div>  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script>$("input:checkbox").on('click', function() {
+    <script>
+    $("input:checkbox").on('click', function() {
       // in the handler, 'this' refers to the box clicked on
       var $box = $(this);
       if ($box.is(":checked")) {
         // the name of the box is retrieved using the .attr() method
         // as it is assumed and expected to be immutable
         var group = "input:checkbox[name='" + $box.attr("name") + "']";
+        console.log($box.val());
+        console.log('checked input');
         // the checked state of the group/box on the other hand will change
         // and the current value is retrieved using .prop() method
         $(group).prop("checked", false);
