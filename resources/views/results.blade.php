@@ -45,8 +45,8 @@
                     <p class="nv">{{$value->City}}</p>
 
                     <p class="nv">{{$value->State}}</p> 
-                    <p class="nv"> Average Rent ${{$value->Avg_Rent}}</p>
-                    <p class="nv">Median Income ${{$value->Median_Income}}</p>
+                    <p class="nv"> Average Rent is ${{$value->Avg_Rent}}</p>
+                    <p class="nv">Median Income is ${{$value->Median_Income}}</p>
                 </div>
 </div>
             @endforeach
