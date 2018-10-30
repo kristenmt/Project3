@@ -1,10 +1,5 @@
 <?php
-$url = parse_url(getenv('DATABASE_URL'));
-$host = $url["host"]?? null;
-$username = $url["user"]?? null;
-$password = $url["pass"]?? null;
-$database = substr($url["path"], 1)?? null;
-               
+$dbUrl = parse_url(env("JAWSDB_URL"));
 return [
 
     /*
@@ -18,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'pgsql_production'),
+    'default' => env('DB_CONNECTION', 'mysql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -47,7 +42,7 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '3306'),
+            'port' => env('DB_PORT', '8889'),
             'database' => env('DB_DATABASE', 'final_db'),
             'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', 'root'),
@@ -66,17 +61,6 @@ return [
             'database' => env('DB_DATABASE', 'forge'),
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
-            'charset' => 'utf8',
-            'prefix' => '',
-            'schema' => 'public',
-            'sslmode' => 'prefer',
-        ],
-        'pgsql_production' => [
-            'driver' => 'pgsql',
-            'host' => $host,
-            'database' => $database,
-            'username' => $username,
-            'password' => $password,
             'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',

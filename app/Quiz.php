@@ -19,4 +19,14 @@ class Quiz extends Model
             'City',
             'State'
             ];
+
+        /**
+         * Define userResult table relationship
+         *
+         * @return object
+         */
+        public function userResult()
+        {
+            return $this->hasMany('App\UserResult');
+        }
 }

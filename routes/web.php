@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/questionnaire', 'QuizController@show');
+Route::post('/user/result', 'QuizController@saveUserResult');
 Route::get('/results', 'ResultsController@results');
 Route::get('/userhome', 'UserhomeController@user');
 Auth::routes();

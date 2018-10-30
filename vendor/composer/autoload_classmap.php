@@ -35,6 +35,7 @@ return array(
     'App\\Quiz' => $baseDir . '/app/Quiz.php',
     'App\\Results' => $baseDir . '/app/Results.php',
     'App\\User' => $baseDir . '/app/User.php',
+    'App\\user_results' => $baseDir . '/app/user_results.php',
     'BeyondCode\\DumpServer\\DumpServerCommand' => $vendorDir . '/beyondcode/laravel-dump-server/src/DumpServerCommand.php',
     'BeyondCode\\DumpServer\\DumpServerServiceProvider' => $vendorDir . '/beyondcode/laravel-dump-server/src/DumpServerServiceProvider.php',
     'BeyondCode\\DumpServer\\Dumper' => $vendorDir . '/beyondcode/laravel-dump-server/src/Dumper.php',

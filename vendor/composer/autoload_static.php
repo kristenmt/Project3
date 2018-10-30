@@ -356,6 +356,7 @@ class ComposerStaticInit8797f119354c67dcfa66033b6b410e13
         'App\\Quiz' => __DIR__ . '/../..' . '/app/Quiz.php',
         'App\\Results' => __DIR__ . '/../..' . '/app/Results.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
+        'App\\user_results' => __DIR__ . '/../..' . '/app/user_results.php',
         'BeyondCode\\DumpServer\\DumpServerCommand' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerCommand.php',
         'BeyondCode\\DumpServer\\DumpServerServiceProvider' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerServiceProvider.php',
         'BeyondCode\\DumpServer\\Dumper' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/Dumper.php',
