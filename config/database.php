@@ -1,5 +1,5 @@
 <?php
-$dbUrl = parse_url(env("JAWSDB_URL"));
+
 return [
 
     /*
